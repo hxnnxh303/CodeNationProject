@@ -1,0 +1,208 @@
+body {
+    font-family: sans-serif;
+}
+
+.background {
+
+background: url("./pictures/terrain.jpg") no-repeat center center fixed;
+background-size: cover;
+}
+
+h1,h2,h3,h4 {
+
+text-align: center;
+
+}
+
+p {
+
+    text-align: center;
+    background-color: rgb(0,0,0,0.6);
+    padding: 35px;
+    color: white;
+    font-size: 20px;
+}
+    
+.whatis {
+
+    text-align: center;
+    background-color: rgb(0,0,0,0.6);
+    padding: 35px;
+    color: white
+
+
+}
+
+.favesub {
+
+    text-align: center;
+    background-color: rgb(0,0,0,0.6);
+    padding: 35px;
+    color: white
+
+
+}
+
+.getmad {
+
+    text-align: center;
+    background-color: rgb(0,0,0,0.6);
+    padding: 35px;
+    color: white
+
+
+}
+
+.lastmonth {
+
+    text-align: center;
+    background-color: rgb(0,0,0,0.6);
+    padding: 35px;
+    color: white
+
+
+}
+
+
+.yourletters {
+
+    text-align: center;
+    background-color: rgb(0,0,0,0.6);
+    padding: 35px;
+    color: white
+
+
+}
+
+.acnl {
+
+    text-align: center;
+    background-color: rgb(0,0,0,0.6);
+    padding: 35px;
+    color: white
+
+
+}
+
+.question {
+
+    text-align: center;
+    background-color: rgb(0,0,0,0.6);
+    padding: 35px;
+    color: white
+
+
+}
+
+
+.productreview {
+
+    text-align: center;
+    background-color: rgb(0,0,0,0.6);
+    padding: 35px;
+    color: white
+
+
+}
+
+.nav {
+
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    justify-content: space-around;
+    background-color: rgb(118, 14, 215,0.6);
+}
+
+
+
+.nav a {
+
+font-size: 30px;
+text-decoration: none;
+color: aqua;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.nav a:hover {
+
+color: chartreuse;
+
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.row > * {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.row3 {
+
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: rgb(255,255,255,0.5)
+
+}
+
+.row3 li {
+
+    background-color: rgb(255,255,255,0.5)
+
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.twitter-container{
+    max-width: 100%;
+    /* margin-left: auto; */
+}
+
+img { 
+    max-width: 100%;
+}
+
+.container { 
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.current-month {
+    width: 30%;
+}
+.last-month img {
+    max-width: 100%;
+}
+/* .last-month{
+    /* width: 50%; */
+    
+/* } */ */
+
+.fb {
+color: white;
+display: flex;
+padding: 50px;
+
+
+}
+
+.reddit {
+
+display: flex;
+align-items: center;
+
+}
+
+.hitman {
+
+margin-top: 20px;
+
+}
