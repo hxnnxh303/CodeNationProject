@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Letter time</title>
+</head>
+
+<body class="background">
+    <div class="container">
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="item2.html">Your thoughts</a>
+            <a href="item3.html">Competitions and fun</a><!--Make these bigger so you can actually see it because of the big image below-->
+            </div>
+
+
+        <img src="pictures/twhead.png" alt="Header for website">
+
+        <h1 class="yourletters">Oh you want some fun stuff, huh?</h1>
+        <div class="row"> <div class="column"></div>
+        <p>We're giving you the chance to win all three of these gaming chairs! These sleek designs are sure to make you get that chicken dinner or dub! <br>
+        All you need to do is let us know your all time favourite meme! Let us know on Twitter or Facebook. </p>
+        <img src="pictures/selection.jpg" alt="Three different gaming chairs.">
+        </div> </div>
+
+
+
+
+
+    <div class="container"> <div class="row"> <div class="column">   <h1 class="question">Poll time!</h1>
+
+    <div class="row3">
+        <p>We know there's a divide between the Lord of the Ring and The Hobbit fans, but which is your favourite? (We won't tell)</p> </div> </div> </div>
+
+    <div class="container">    <div class="row3">
+            <div class="column">   <form id="poll"> <!--Padding or margin?-->
+                        <h3>Score:</h3>
+                    <ul>
+                        <li>LotR: <span id="lotr-score">0</span></li>
+                        <li>The Hobbit: <span id="hobbit-score">0</span></li>
+                        <li>Both: <span id="both-score">0</span></li>
+                    </ul>
+                    <label><input type="radio" name="pick-your-choice" value="lotr">Lord of the Rings, of course.
+                    </label>
+                    <label>
+                        <input type="radio" name="pick-your-choice" value="hobbit">The Hobbit all the way.
+                    </label>
+                    <label>
+                        <input type="radio" name="pick-your-choice" value="both">You're a monster, why are you making me choose?
+                    </label>
+               
+                <button type="submit">Submit here</button>
+            </form>
+            <script>
+                let score = {
+                    lotr: 0,
+                    hobbit: 0,
+                    both: 0
+                }
+                let form = document.getElementById('poll');
+                form.addEventListener('submit', function (event) {
+                    event.preventDefault();
+                    let selected = document.querySelector('input[name="pick-your-choice"]:checked');
+                    if (!selected) {
+                        return;
+                    }
+                    score[selected.value]++;
+                    for (const [key, value] of Object.entries(score)) {
+                        document.getElementById(`${key}-score`).innerText = value;
+                    }
+                });
+            </script>
+            </div>    
+            </div> </div>
+        <!--Find where to submit it to-->
+    <!-- </div>
+
+    <div>    <form action="google.com">
+            <input type="text" placeholder="Share your thoughts here!" required>
+            <button type="submit">Submit here</button>
+        </form>
+    </div> 
+    <!--Add a twitter source-->
+</body>
+
+</html>
